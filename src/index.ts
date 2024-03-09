@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 
 const client = new PrismaClient();
-
+//ts-ignore 
 app.get("/", (req, res) => {
     res.json({
         message: "Healthy server"
